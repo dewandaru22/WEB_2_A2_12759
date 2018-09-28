@@ -39,11 +39,13 @@
             <li class="nav-brand">
                 <a href="/">Home</a>
             </li>
-            <li>
-                <a href="/halamandua">- Halaman Dua</a>
-            </li>
-            <li>
-                <a href="/halamantiga">- Halaman Tiga</a>
+            <li class="main-nav">
+                <a href="/contoh">Contoh</a>
+				<ul class="main-nav">
+					<li><a href="/contoh/create">create</a></li>
+					<li><a href="/contoh/halamandua">halaman dua</a></li>
+					<li><a href="/contoh/halamantiga">halaman tiga</a></li>
+				</ul>
             </li>
         </ul>
     </aside>
