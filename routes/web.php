@@ -20,3 +20,4 @@ Route::get('/contoh/halamantiga', 'Contoh@halamantiga');
 Route::resource('contoh', 'Contoh');
 
 Route::resource('mahasiswa','Mahasiswa');
+Route::resource('user','User');

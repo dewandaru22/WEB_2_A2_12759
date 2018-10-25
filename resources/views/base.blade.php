@@ -47,6 +47,22 @@
 					<li><a href="/contoh/halamantiga">halaman tiga</a></li>
 				</ul>
             </li>
+			<li class="main-nav">
+                <a href="/mahasiswa">Mahasiswa</a>
+				<ul class="main-nav">
+					<li><a href="/mahasiswa/create">create</a></li>
+					<li><a href="/mahasiswa/halamandua">halaman dua</a></li>
+					<li><a href="/mahasiswa/halamantiga">halaman tiga</a></li>
+				</ul>
+            </li>
+			<li class="main-nav">
+                <a href="/user">User</a>
+				<ul class="main-nav">
+					<li><a href="/user/create">create</a></li>
+					<li><a href="/user/halamandua">halaman dua</a></li>
+					<li><a href="/user/halamantiga">halaman tiga</a></li>
+				</ul>
+            </li>
         </ul>
     </aside>
 
