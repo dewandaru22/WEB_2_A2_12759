@@ -40,27 +40,21 @@
                 <a href="/">Home</a>
             </li>
             <li class="main-nav">
-                <a href="/contoh">Contoh</a>
+                <a href="{{ route('contoh.index') }}">Contoh</a>
 				<ul class="main-nav">
-					<li><a href="/contoh/create">create</a></li>
-					<li><a href="/contoh/halamandua">halaman dua</a></li>
-					<li><a href="/contoh/halamantiga">halaman tiga</a></li>
+					<li><a href="{{ route('contoh.create') }}">create</a></li>
 				</ul>
             </li>
 			<li class="main-nav">
-                <a href="/mahasiswa">Mahasiswa</a>
+                <a href="{{ route('mahasiswa.index') }}">Mahasiswa</a>
 				<ul class="main-nav">
-					<li><a href="/mahasiswa/create">create</a></li>
-					<li><a href="/mahasiswa/halamandua">halaman dua</a></li>
-					<li><a href="/mahasiswa/halamantiga">halaman tiga</a></li>
+					<li><a href="{{ route('mahasiswa.create') }}">create</a></li>
 				</ul>
             </li>
 			<li class="main-nav">
                 <a href="/user">User</a>
 				<ul class="main-nav">
 					<li><a href="/user/create">create</a></li>
-					<li><a href="/user/halamandua">halaman dua</a></li>
-					<li><a href="/user/halamantiga">halaman tiga</a></li>
 				</ul>
             </li>
         </ul>
