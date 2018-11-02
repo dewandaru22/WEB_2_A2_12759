@@ -63,7 +63,8 @@ class Mahasiswa extends Controller
      */
     public function edit($id)
     {
-        //
+        $data = ModelMahasiswa::where('id',$id)->get();
+        return view('mahasiswa_edit',compact('data'));
     }
 
     /**
@@ -75,7 +76,13 @@ class Mahasiswa extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = ModelMahasiswa::where('id',$id)->first();
+        $data->nama = $request->nama;
+        $data->email = $request->email;
+        $data->nohp = $request->nohp;
+        $data->alamat = $request->alamat;
+        $data->save();
+        return redirect()->route('mahasiswa.index')->with('alert-success','Data berhasil diubah!');
     }
 
     /**
@@ -86,6 +93,8 @@ class Mahasiswa extends Controller
      */
     public function destroy($id)
     {
-        //
+        $data = ModelMahasiswa::where('id',$id)->first();
+        $data->delete();
+        return redirect()->route('mahasiswa.index')->with('alert-success','Data berhasi dihapus!');
     }
 }
