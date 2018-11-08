@@ -21,3 +21,10 @@ Route::resource('contoh', 'Contoh');
 
 Route::resource('mahasiswa','Mahasiswa');
 Route::resource('user','User');
+
+Route::get('/home', 'Member@index');
+Route::get('/login', 'Member@login');
+Route::post('/loginPost', 'Member@loginPost');
+Route::get('/register', 'Member@register');
+Route::post('/registerPost', 'Member@registerPost');
+Route::get('/logout', 'Member@logout');
