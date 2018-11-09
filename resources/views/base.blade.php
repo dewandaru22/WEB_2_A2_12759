@@ -52,9 +52,15 @@
 				</ul>
             </li>
 			<li class="main-nav">
-                <a href="/user">User</a>
+                <a href="{{ route('user.index') }}">User</a>
 				<ul class="main-nav">
-					<li><a href="/user/create">create</a></li>
+					<li><a href="{{ route('user.create') }}">create</a></li>
+				</ul>
+            </li>
+			<li class="main-nav">
+                <a href="{{ route('file.index') }}">File</a>
+				<ul class="main-nav">
+					<li><a href="{{ route('file.create') }}">create</a></li>
 				</ul>
             </li>
         </ul>
