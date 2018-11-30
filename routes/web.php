@@ -22,6 +22,7 @@ Route::resource('contoh', 'Contoh');
 Route::resource('mahasiswa','Mahasiswa');
 Route::resource('user','User');
 Route::resource('file','File');
+Route::resource('member','12759_mahasiswa');
 
 Route::get('/home', 'Member@index');
 Route::get('/login', 'Member@login');
